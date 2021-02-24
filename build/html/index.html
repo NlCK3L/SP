@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Documentation’s documentation! &#8212; документация Documentation 1</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/translations.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="next" title="Введение" href="navigation.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome-to-documentation-s-documentation">
+<h1>Welcome to Documentation’s documentation!<a class="headerlink" href="#welcome-to-documentation-s-documentation" title="Ссылка на этот заголовок">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p id="id1"><strong>Введение</strong></p>
+<p>Требуется учебно-демонстрационное ПО, для наглядного представления фрактальных структур.</p>
+<p id="id2"><strong>Основание для разработки</strong></p>
+<p>Основанием для разработки является отсутствие прикладного ПО способного генерировать и выводить на экран графики фрактальных уравнений.</p>
+<p id="id3"><strong>Назначение ПО</strong></p>
+<p>Desktop-приложение для генерации фракталов в учебно-демонстрационных целях, на уроках алгебры и геометрии.</p>
+<p id="id4"><strong>Требования к функциональным характеристикам</strong></p>
+<ol class="arabic simple">
+<li><p>Кроссплатформенность (Windows/Unix/Linus).</p></li>
+<li><p>Распознавание ввода произвольных функций в соответствии с правилами алгебраических вычислений.</p></li>
+<li><p>Вывод на экран результата генерации (вычисления функции).</p></li>
+<li><p>Возможность сохранения изображения.</p></li>
+<li><p>Сохранение текстового документа с функцией и входными данными, формат “.txt”.</p></li>
+<li><p>Выбор директории сохранения файлов.</p></li>
+</ol>
+<p id="id5"><strong>Требование к надёжности</strong></p>
+<ol class="arabic simple">
+<li><p>ПО не должно уходить в бесконечные циклы и выкидывать исключения в ходе работы.</p></li>
+<li><p>Ручное прерывание выполнения ПО на любой стадии.</p></li>
+<li><p>Сообщение о некорректности входных данных в случае выхода их за границы допустимых значений (для кол-ва итераций: 0 ≤ X ≤ 1010; для координатных значений -1010 ≤ X, Y ≤ 1010).</p></li>
+<li><p>В случае возникновения ошибок выполняется перезапуск приложения.</p></li>
+</ol>
+<p id="id6"><strong>Условия эксплуатации</strong></p>
+<ol class="arabic simple">
+<li><p>Школьные ПК, ЦПУ – 2 ядра, 4 потока, 2.2 ГГц.</p></li>
+<li><p>Эксплуатация преподавателями и детьми от 14 лет.</p></li>
+<li><p>Возможны многократные попытки ввода некорректных входных данных (функции, переменные)</p></li>
+</ol>
+<p id="id7"><strong>Требования к составу и параметрам технических средств</strong></p>
+<ol class="arabic simple">
+<li><p>Платформа Java 11+</p></li>
+</ol>
+<p id="id8"><strong>Требование к информационной и программной совместимости</strong></p>
+<ol class="arabic simple">
+<li><p>Графический интерфейс JFX 11+</p></li>
+<li><p>Реализация “Скелета” ПО - Java 11+</p></li>
+<li><p>Реализация алгоритмов вычисления и отрисовки – Kotlin JDK 11+</p></li>
+</ol>
+<p id="id9"><strong>Требования к дизайн</strong></p>
+<ol class="arabic simple">
+<li><p>Фон: цвет: #2e2e2e</p></li>
+<li><p>Рамки объектов – размер 1px; цвет: #525252</p></li>
+<li><p>Шрифт – тип: “Arial”; размер – 12pt; цвет: #fafafa;</p></li>
+<li><p>Цвет панелей, кнопок: #1d2340;</p></li>
+<li><p>Цвет активных элементов: #313e7a;</p></li>
+<li><p>Отступы кратные 5px, но не более 20px;</p></li>
+</ol>
+<p id="id10"><strong>Этапы разработки</strong></p>
+<p>Работа по созданию данного приложения разделяется на следующие этапы:
+1.      Составление спецификации.
+2.      Проектирование.
+3.      Разработка платформы.
+4.      Планировка графического интерфейса.
+5.      Реализация графического интерфейса.
+6.      Реализация модулей генерации.
+7.      Сборка проекта.
+8.      Тестирование.
+9.      При обнаружении критических неисправностей вернуться к пунктам 7-8.</p>
+<p id="id11"><strong>Порядок контроля и приёмки</strong></p>
+<p>Должен быть произведён тест программы, затрагивающий весь функционал приложения.
+Дата получения проекта: 10.9.2020.
+Дата завершения проекта: 12.09.2020.
+Дата сдачи проекта: -32.13.2021.</p>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">Documentation</a></h1>
+
+
+
+
+
+
+
+
+<h3>Навигация</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#id1">Введение</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id2">Основание для разработки</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id3">Назначение ПО</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id4">Требования к функциональным характеристикам</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id5">Требование к надёжности</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id6">Условия эксплуатации</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id7">Требования к составу и параметрам технических средств</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id8">Требование к информационной и программной совместимости</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id9">Требования к дизайну</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id10">Этапы разработки</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id11">Порядок контроля и приёмки</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+      <li>Next: <a href="navigation.html" title="следующая глава">Введение</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Быстрый поиск</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Искать" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Zefirov N.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
